@@ -1,0 +1,79 @@
+Here’s a comprehensive Replit AI prompt you can paste directly:
+
+PROMPT:
+Build a complete, single-file HTML/CSS/JS website for Corva Health Consulting — a premium CQC inspection consultancy run by Jolaade, a former NHS England professional. The site must feel cinematic, expensive, and instantly trust-building. Visitors should feel compelled to book within seconds of landing.
+
+BRAND & TONE
+	•	Luxury healthcare consultancy. Think: McKinsey meets a private Harley Street clinic.
+	•	Voice: authoritative, warm, precise. Never salesy. Confidence that doesn’t need to shout.
+	•	Tagline concept: “From Requires Improvement to Outstanding — with someone who’s been on the other side.”
+
+AESTHETIC DIRECTION
+	•	Palette: Deep obsidian (#0A0A0F) background with warm champagne gold (#C9A96E) as the primary accent. Ivory white (#F5F0E8) for body text. Subtle teal (#2A7A7A) for secondary accents. No purple gradients. No generic blues.
+	•	Typography: Import from Google Fonts — use Cormorant Garamond (elegant serif) for all headings/display text, and DM Sans for body copy. Large, editorial headline sizing (clamp-based, responsive).
+	•	Texture: Add a very subtle grain/noise overlay across the entire page (CSS or SVG filter). Hero section should have a dark, cinematic full-screen background with a soft radial gradient emanating from center.
+	•	Motion: On page load, stagger-reveal the hero text letter by letter or line by line. Fade-in sections as they scroll into view using IntersectionObserver. Smooth scroll throughout. Subtle parallax on hero.
+	•	Layout: Asymmetric. Wide generous margins. Full-bleed sections alternating dark and near-dark. A floating sticky nav that becomes a frosted-glass bar on scroll.
+
+PAGE SECTIONS — BUILD ALL OF THESE:
+1. Sticky Navigation
+Logo left: “Corva Health Consulting” in Cormorant Garamond. Right: nav links (Services, Results, About, Reviews, Contact) + a gold CTA button “Book a Consultation”. On scroll, nav gets backdrop-filter: blur(12px) with slight dark background.
+2. Hero Section (full viewport)
+	•	Headline (large, serif, animated reveal): “Your next CQC inspection doesn’t have to feel like a threat.”
+	•	Subheadline: “We prepare care providers for what inspectors actually look for — with honesty, precision, and a track record that speaks for itself.”
+	•	Two CTAs: Primary gold button “Book Your Mock Inspection” | Secondary ghost button “See Our Results”
+	•	Background: Deep dark with a very subtle warm light bloom, almost like candlelight. Optional: faint abstract medical/geometric line art at low opacity.
+3. Trust Bar / Social Proof Strip
+Slim strip below hero. Light text on slightly lighter dark: “Trusted by registered managers and providers across Cambridgeshire, Peterborough, Lincoln and beyond” — flanked by two simple decorative lines or stars.
+4. Services Section
+Header: “What We Do”. Three service cards in a grid — each card has a thin gold top border, dark background, icon or number, title, and 2-line description:
+	•	Mock CQC Inspections — “A forensic walkthrough of your service before the real thing. Honest findings. No surprises on inspection day.”
+	•	Bespoke Action Plans — “Not a document to file away. A working plan you can actually implement — built around your specific findings.”
+	•	Policy & Governance Overhaul — “CQC-compliant policies written to regulation standard, in language your staff will actually use.”
+Each card has a subtle hover effect (slight lift + gold glow).
+5. Results / Outcomes Section
+Full-bleed dark section. Large headline: “Real Outcomes. Real Services.”
+Show 3 stat/outcome callouts in large gold numerals or bold display text:
+	•	“Requires Improvement → Good”
+	•	“Policies updated: 3 weeks”
+	•	“Well-Led flagged as a strength by inspector”
+Below stats, a short paragraph: “These aren’t case studies. They’re care providers who came to us, did the work, and changed their CQC rating. Jolaade doesn’t just identify problems — she stays until they’re fixed.”
+6. Reviews Section — THIS IS CRITICAL
+Headline: “What Registered Managers Say”
+Display all 4 reviews as large elegant quote cards. Each card:
+	•	Gold opening quotation mark (large, decorative)
+	•	Full review text in italic serif
+	•	Reviewer name + role + location in small caps below
+	•	Subtle card border or background differentiation
+Reviews to include verbatim:
+“Jolaade came in before our re-inspection and was honest in a way we hadn’t experienced from anyone before. The report identified exactly what the CQC raised, we felt prepared, not blindsided. We went from Requires Improvement to Good. That outcome had her name on it.” — Sandra M., Registered Manager, Nursing Home, Cambridgeshire
+“The Well-Led section of our report had always been our weak spot. Jolaade rebuilt our governance framework from scratch — meetings, audit schedules, the whole structure. Our inspector commented on it specifically as a strength.” — David K., Director, Lincoln
+“I had tried to get our policies updated for over a year. Jolaade did it in three weeks. Every single one was written to the CQC standard, easy for staff to use, and linked to the regulations. That alone was worth every penny.” — Kelly R., Registered Manager, Cambridgeshire
+“What I valued most was that she didn’t just tell me what was wrong, she showed me how to fix it and stayed with us through the process. The action plan was something we could actually work from, not a document to file away.” — Patricia O., Registered Manager, Peterborough
+7. About Section
+Headline: “Who Is Behind Corva Health Consulting?”
+Two-column layout (or stacked on mobile): Left — a refined placeholder portrait frame (elegant bordered rectangle with initials “JC” or a soft abstract shape). Right — copy:
+“Jolaade brings a perspective most consultants don’t have: she’s worked within NHS England. She knows how the system thinks, what inspectors are trained to look for, and where the gaps between policy and practice actually live.
+Corva Health Consulting was built for care providers who want more than a checklist — they want someone who will stand next to them, tell them the truth, and help them come out the other side stronger.”
+8. CTA / Booking Section
+Full-bleed section, gold accent background (or dark with gold border). Large headline: “Ready to face your next inspection with confidence?”
+Subtext: “Book a consultation and find out exactly where you stand — and what it takes to get where you want to be.”
+Big centered button: “Book Your Consultation” — links to mailto:hello@corvahealth.co.uk as placeholder.
+9. Footer
+Dark. Logo left. Nav links center. Right: email placeholder + “© 2025 Corva Health Consulting. All rights reserved.”
+Small text: “Serving care providers across England.”
+
+TECHNICAL REQUIREMENTS
+	•	Single HTML file. All CSS in <style>, all JS in <script>.
+	•	Fully responsive — flawless on mobile.
+	•	Google Fonts loaded via <link> tag.
+	•	IntersectionObserver for scroll-triggered fade-ins on every section.
+	•	Hero text animated on load with staggered CSS keyframe reveals.
+	•	Smooth scroll behavior.
+	•	No frameworks. No build tools. Pure HTML/CSS/JS only.
+	•	Grain overlay: use an SVG feTurbulence filter applied as a full-page pseudo-element at ~3% opacity.
+	•	All hover interactions should feel premium — slow, intentional, never jumpy.
+
+THE VIBE CHECK: When done, this site should feel like it was built for a £500/hour consultant. Visitors — tired, stressed registered managers dreading their next CQC visit — should feel immediate relief and trust. The design does as much selling as the words.
+
+Paste that straight into Replit AI and it should generate something genuinely impressive. If it cuts corners on the grain texture or animations, prompt it with: “Add the grain overlay pseudo-element and make sure the hero text animates line by line on load” — those two details will make or break the luxury feel.​​​​​​​​​​​​​​​​
